@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloween Decor Finds — идеи декора на Хэллоуин с AliExpress</title>
+  <meta name="description" content="Подборка лучших товаров для декора на Хэллоуин с AliExpress: тыквы, гирлянды, украшения с доставкой по всему миру.">
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0/dist/index.global.js"
+    integrity="sha384-nWTzRTCY/9V4Bo352ehygr1c4cnst4XN6lMR3fipakEQrhVpc0hEM5Dii3Amz0sT"
+    crossorigin="anonymous"
+  ></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+  <script>
+    document.documentElement.classList.toggle(
+      'dark',
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    );
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-dvh text-sm antialiased bg-orange-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+
+  <header class="border-b border-orange-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/70 backdrop-blur sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg text-orange-700 dark:text-orange-400">🎃 Halloween Decor Finds</a>
+      <nav class="hidden sm:flex gap-6 text-gray-600 dark:text-gray-300">
+        <a href="#products" class="hover:text-orange-700 dark:hover:text-orange-400">Товары</a>
+        <a href="#about" class="hover:text-orange-700 dark:hover:text-orange-400">О сайте</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative">
+    <img src="assets/hero.jpeg" alt="Halloween decor" class="w-full h-56 sm:h-72 md:h-80 object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+      <div class="max-w-5xl mx-auto px-4 pb-6 w-full">
+        <h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold drop-shadow">Идеи декора на Хэллоуин 2026</h1>
+        <p class="text-white/90 mt-1 max-w-xl">Подборка товаров с AliExpress: тыквы, гирлянды, украшения для дома и двора с доставкой по всему миру.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-4">
+    <p class="text-xs text-gray-500 dark:text-gray-400 mt-4 border border-orange-200 dark:border-gray-800 bg-orange-100/60 dark:bg-gray-900 rounded-lg p-3">
+      Этот сайт содержит партнёрские ссылки на AliExpress. При покупке по этим ссылкам мы можем получать небольшое вознаграждение — это не влияет на цену для вас.
+    </p>
+  </div>
+
+  <main id="products" class="max-w-5xl mx-auto px-4 py-8">
+    <h2 class="text-xl font-semibold mb-4">Подборка товаров</h2>
+    <div id="product-grid" class="card-grid"></div>
+  </main>
+
+  <section id="about" class="max-w-5xl mx-auto px-4 py-8 border-t border-orange-200 dark:border-gray-800">
+    <h2 class="text-xl font-semibold mb-2">О сайте</h2>
+    <p class="text-gray-600 dark:text-gray-300 max-w-2xl">
+      Halloween Decor Finds — подборка идей и товаров для украшения дома на Хэллоуин с AliExpress. Мы отбираем товары с хорошими отзывами и доставкой в разные страны, чтобы вам было проще выбрать декор.
+    </p>
+  </section>
+
+  <footer class="border-t border-orange-200 dark:border-gray-800 py-6 text-center text-xs text-gray-500 dark:text-gray-400">
+    © 2026 Halloween Decor Finds. Товарные ссылки ведут на AliExpress.com и являются партнёрскими.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
