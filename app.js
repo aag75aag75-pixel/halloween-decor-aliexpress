@@ -13,6 +13,7 @@
 // ---------------------------------------------------------------------------
 const PRODUCTS = [
   {
+    id: "pumpkin-lights",
     title: "Светящиеся тыквы-фонари (набор 3 шт.)",
     description: "LED-тыквы для крыльца и двора, работают от батареек, таймер включения.",
     price: "от $8",
@@ -20,6 +21,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=light+up+halloween+pumpkin"
   },
   {
+    id: "garland",
     title: "Гирлянда с тыквами и черефами",
     description: "Декоративная гирлянда 3м для дома и вечеринки, тёплый свет.",
     price: "от $5",
@@ -27,6 +29,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+string+lights"
   },
   {
+    id: "spiderweb",
     title: "Паутина декоративная (набор)",
     description: "Растягивающаяся паутина для входа и двора, с паучками в комплекте.",
     price: "от $3",
@@ -34,6 +37,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+spider+web+decoration"
   },
   {
+    id: "wreath",
     title: "Венок на дверь «Хэллоуин»",
     description: "Осенний венок с тыквами и листьями, готов к использованию сразу из коробки.",
     price: "от $10",
@@ -41,6 +45,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+door+wreath"
   },
   {
+    id: "inflatable-ghost",
     title: "Надувной декор «Привидение» для двора",
     description: "Большая надувная фигура с подсветкой, крепления в комплекте.",
     price: "от $15",
@@ -48,6 +53,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+inflatable+decoration"
   },
   {
+    id: "flameless-candles",
     title: "Свечи-таймер с эффектом пламени",
     description: "Безопасные LED-свечи, автоматическое включение по таймеру каждый день.",
     price: "от $6",
@@ -55,6 +61,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+flameless+candles"
   },
   {
+    id: "table-set",
     title: "Скатерть и посуда «Хэллоуин» (набор)",
     description: "Тематическая сервировка стола для праздничного ужина или вечеринки.",
     price: "от $7",
@@ -62,6 +69,7 @@ const PRODUCTS = [
     link: "https://www.aliexpress.com/wholesale?SearchText=halloween+tablecloth+set"
   },
   {
+    id: "witch-decor",
     title: "Костюм-декор «Ведьма» для крыльца",
     description: "Фигура ведьмы в полный рост, ткань + каркас, легко устанавливается.",
     price: "от $12",
@@ -73,7 +81,7 @@ const PRODUCTS = [
 function renderProducts() {
   const grid = document.getElementById("product-grid");
   grid.innerHTML = PRODUCTS.map((p) => `
-    <div class="product-card">
+    <div class="product-card" id="${p.id}">
       <img src="${p.image}" alt="${p.title}" loading="lazy">
       <div class="body">
         <h3>${p.title}</h3>
